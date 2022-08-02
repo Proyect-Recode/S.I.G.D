@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+/* Estilos para la letra */
+
+.e_d-text {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-family: Kanit;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/* Estilos para la seleccion de deporte */
+
+
+.opcion_deporte_futbol {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+
+    border: solid 1px white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/futbol-opcion.jpg);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.opcion_deporte_basket {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+
+    border: solid 1px white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/basketball-opcion.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+
+.opcion_deporte_handball {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+
+    border: solid 1px white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/handball-opcion.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.opcion_deporte_boton {
+
+    border: 5px solid #222831; 
+    background-color: #222831; 
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    
+    
+}
+
+.opcion_deporte_boton:hover {
+
+    border: 5px solid #222831; 
+    background-color: #222831; 
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #00ADB5;
+    box-shadow: 1px 1px 20px black;
+
+
+}

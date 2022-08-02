@@ -1,0 +1,1 @@
+<!-- En este archivo van a ir las clases para cada entidad -->

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+/*   {}   */
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Kanit;
+    background: #222831;  
+    
+}
+
+.nav {
+
+    background: #1c2129;
+    height: 120px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav_container {
+
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+
+.nav_logo {
+
+    cursor:unset;
+    width: 150px;
+    height: 150px;
+
+}
+
+.nav_menu {
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5em;
+
+}
+
+
+.nav_item {
+
+    color: #fff;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 99%, 0% 100%);
+    cursor: pointer;
+    
+
+}
+
+.nav_item::after {
+
+    content: "";
+    display: block;
+    background:#fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: ease 0.3s;
+}
+
+.nav_item:hover {
+
+    --clippy: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    color: #00ADB5;
+}
+
+
+
+
+
+
+
+.nav_label, .nav_input {
+
+    display: none;
+
+} 
+
+@media (max-width: 768px) {
+
+    .nav_label{
+
+        display: block;
+        cursor: pointer;
+
+    }
+
+
+    .nav_menu {
+        position: fixed;
+        top: 120px;
+        bottom: 0;
+        background: #1c2129;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.3s ease-in-out;
+    }
+
+
+    
+    .nav_input:checked + .nav_menu {
+
+        clip-path: circle(70.7% at 50% 50%);
+        border-top: solid #fff;
+
+     }  
+
+}
+  
+
+.contenido {
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #1c2129;
+  margin-top: 25px;
+  height: 70vh;
+}
+
+footer {
+
+width: 100%;
+height: 125px;
+background-color: #1c2129;
+bottom: 0;
+position: absolute;
+border-top: 3px solid #00ADB5;
+
+}
+
+.footer-txt {
+
+    justify-content: center;
+    align-items:baseline;
+    display: flex;
+    color: #fff;
+    font-family: Kanit;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
