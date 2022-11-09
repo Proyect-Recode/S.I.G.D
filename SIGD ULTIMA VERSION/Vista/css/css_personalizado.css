@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+body {
+   background-color: #222831;
+   box-sizing: border-box;
+   
+}
+
+
+/* INDEX */
+
+
+/* NAVBAR */
+
+
+.navbar  {
+    background-color: #1c2129;
+    padding: 10px;
+    font-family: Kanit;
+}
+
+.collapse-icon  {
+    width: 25px;
+    height: 25px;
+}
+
+.logo-navbar {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+
+/* BIENVENIDA INDEX */
+
+.home-banner {
+
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95)),url(../img/home-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    border-bottom: 3px solid #00ADB5;
+}
+
+.login-btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid #00ADB5;
+    background: #1c2129; 
+    color: white;
+    cursor: pointer;
+   
+    
+  }
+  
+  .signup-btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid #00ADB5;
+    background: #1c2129;
+    color: white;
+    cursor: pointer;
+    
+  }
+
+.btn-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px
+
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+.content h1 {
+    font-size: 30px
+    
+}
+
+
+/* carousel */
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    
+    color: #fff;
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 505px;
+    height: 500px;
+    margin-right: 20px;
+    color: #fff;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+  }
+  
+  .product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  .product-brand {
+    text-transform: uppercase;
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+    
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  
+  .collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .collection {
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+  }
+  
+  .collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+  
+
+
+/* PARTIDOS */
+
+
+.match {
+	background-color: #1c2129;
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+  border: 1px solid #00ADB5;
+	border-radius: 40px;
+	
+}
+
+.match-header {
+	display: flex;
+
+	padding: 16px;
+}
+
+.match-status {
+	background-color: #222831;
+	color: #327c36;
+	padding: 8px 12px;
+	border-radius: 40px;
+	font-weight: 600;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	margin-right: auto;
+	
+}
+
+.match-tournament {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	
+}
+
+.match-tournament img {
+    width: 20px;
+    margin-right: 12px;
+}
+
+.btn-icon {
+	border: 0;
+	background-color: transparent;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.match-content {
+	display: flex;
+	position:inherit;
+}
+
+.column {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% / 3);
+    
+
+}
+
+.team {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team-logo {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	
+	
+	
+}
+
+
+.team-logo img {
+    width: 50px;
+}
+
+.team-name {
+	text-align: center;
+	margin-top: 24px;
+	font-size: 20px;
+	font-weight: 600;
+    color: #fff;
+}
+
+.match-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.match-date, .match-referee {
+	font-size: 14px;
+	color: #fff;
+	
+}
+
+.match-date, .match-referee strong {
+    color: #fff;
+}
+
+
+.match-score {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.match-score-number {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1;
+    color: #fff;
+	
+}
+
+
+.match-score-divider {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.match-time-lapsed {
+	color: #00ADB5;
+	font-size: 14px;
+	font-weight: 600;
+	
+}
+
+.match-referee {
+	margin-top: 12px;
+}
+
+
+.match-view {
+	
+    position: relative;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 0;
+	background-color: #00ADB5;
+	border-radius: 6px;
+	padding: 10px 48px;
+	color: #fff;
+	font-size: 14px;
+	
+}
+
+
+.container-match {
+	
+	
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 85px;
+    background-color: #1c2129;
+    border-top: 3px solid #00ADB5;
+    
+}
+
+.footer_txt {
+    color: #fff;
+    font-size: 20px
+}
+
+/* SECCION ELEGIR DEPORTE */
+
+.e_d-text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-family: Kanit;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/* Estilos para la seleccion de deporte */
+
+
+
+.contenido_deportes {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    
+}
+
+
+
+
+.opcion_deporte_futbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    height: 425px;
+    min-height: 200px;
+    border: solid 1px white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/futbol-opcion.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    
+
+}
+
+.opcion_deporte_basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    height: 425px;
+    border: solid 1px white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/basketball-opcion.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.opcion_deporte_handball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    height: 425px;
+    border: solid 1px white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/handball-opcion.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.opcion_deporte_boton {
+    border: 5px solid #222831; 
+    background-color: #222831; 
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.opcion_deporte_boton:hover {
+    border: 5px solid #222831; 
+    background-color: #222831; 
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #00ADB5;
+    box-shadow: 1px 1px 20px black;
+}
+
+/*  MENU DE USUARIO */ 
+
+.icons-size{
+    color: #00ADB5;
+    font-size: 14px;
+}
+.action{
+    position: fixed;
+    right: 30px;
+    top:20px;
+    z-index: 1;
+}
+.action .profile{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+}
+.action .profile img{
+    width: 100%;
+    top:0;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    height: 100%;
+}
+.action .menu{
+    background-color:#1c2129;
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    right: -10px;
+    width: 250px;
+    transition: 0.5s;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+   
+}
+.action .menu.active{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+    border-radius: 15px;
+    border: #00ADB5 solid 2px;
+}
+
+
+
+.action .menu::before{
+    background-color:#00ADB5;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    transform:rotate(45deg);
+    top:-5px;
+    width: 20px;
+}
+
+
+
+.icon-img {
+
+    width: 50px;
+    width: 60px;
+    
+
+
+}
+
+.icon-img:hover {
+
+    box-shadow: 1px 1px 10px #00ADB5;
+    
+
+
+}
+
+.action .menu h3{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 20px 0px;
+    text-align: left;
+    width: 100%;
+}
+.action .menu ul{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Kanit;
+}
+
+
+.action .menu ul li{
+    align-items: center;
+    border-top:1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 10px 0px;
+}
+.action .menu ul li img{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition:0.5s
+}
+.action .menu ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.action .menu ul li:hover img{
+    opacity: 1;
+}
+.action .menu ul li:hover a{
+    color:#00ADB5;
+}
+
+
+
+
+
+.contenido-general {
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+
+/* CONFIGURACION */
+
+
+.Form_Container form{
+
+  padding: 20px;
+  border: 1px solid #00ADB5;
+  border-radius: 10px;
+
+}
+
+.Form_Container h1, Label {
+
+  
+  color: #fff;
+
+}
+
+
+/* DATO JUGADOR */
+
+.marco {
+
+  color: #fff;
+
+}
+
+/* menus */
+
+
